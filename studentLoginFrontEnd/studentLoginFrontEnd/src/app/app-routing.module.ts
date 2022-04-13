@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: 'students', component: StudentListComponent},
   {path: 'create-student', component: CreateStudentComponent},
   {path: '', redirectTo: 'students', pathMatch: 'full'},
-  {path: 'update-students/:id', component: UpdateStudentComponent}
+  {path: 'update-student/:id', component: UpdateStudentComponent}
 ];
 
 @NgModule({

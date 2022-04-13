@@ -9,7 +9,7 @@ import { StudentService } from '../student.service';
   styleUrls: ['./student-list.component.css']
 })
 export class StudentListComponent implements OnInit {
-
+  id!:number;
   students!: Student[];
 
   constructor(private studentService: StudentService, private router: Router ) { }
@@ -26,5 +26,5 @@ export class StudentListComponent implements OnInit {
   updateStudent(id: number){
     this.router.navigate(['update-student', id]);
       }
-      
+
 }
