@@ -17,6 +17,8 @@
          <td>{{student.mobileNumber}}</td>
          <td>
             <button (click)="updateStudent(student.id)" class="btn btn-info">Update</button>
+
+            <button (click)="deleteStudent(student.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
          </td>
         </tr>
     </tbody>
