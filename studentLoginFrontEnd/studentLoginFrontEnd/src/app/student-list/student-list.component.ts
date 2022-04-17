@@ -23,6 +23,11 @@ export class StudentListComponent implements OnInit {
       this.students = data;
     });
   }
+
+  studentDetails(id: number){
+    this.router.navigate(['student-details', id]);
+  }
+
   updateStudent(id: number){
     this.router.navigate(['update-student', id]);
       }
